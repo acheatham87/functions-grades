@@ -1,14 +1,12 @@
 
 
-const createStudent = () => {
+const createNewStudent = () => {
     const newStudent = {
-        name: "James",
-        grade: "Freshman"
+        Name: "Andrew",
+        Grade: "Freshman"
     }
     return newStudent
 }
-const newStudent = createStudent()
-console.log(newStudent)
 
 const addMathGrade = (student) => {
     student.mathGrade = "B"
@@ -23,8 +21,11 @@ const addScienceGrade = (student) => {
     student.scienceGrade = "A"
     return student
 }
+const newStudent = createNewStudent()
+
 const studentWithMath = addMathGrade(newStudent)
 const studentWithHistory = addHistoryGrade(studentWithMath)
 const studentWithScience = addScienceGrade(studentWithHistory)
 
+console.log (newStudent)
 
